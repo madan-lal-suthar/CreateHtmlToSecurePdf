@@ -37,8 +37,9 @@ ee.on('message', async function(indexPage) {
     await browser.close();
 
     const PDFDocument = require('pdfkit');
-    let options= {
-        ownerPassword: "12345f6",
+     let options= {
+        size : [600,300],
+        ownerPassword: "123456",
         userPassword : "123456"
     }
     const doc = new PDFDocument(options);
